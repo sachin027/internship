@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid d-flex">
+    <!-- sidebar  -->
+    <aside class="sidebar">
+      <div class="h-100">
+        <!-- sidebar logo  -->
+        <div class="logo  nowrap">
+          <a href="#" class="d-flex"><img src="assets/images/dummy logo.png" alt="" class="pe-3"><span
+              class="logo-text">Dabang</span>
+          </a>
+        </div>
+
+        <!-- sidebar content -->
+        <ul class="list-group">
+          <li class="list-item active">
+            <a href="#" class="sidebar-link d-flex "><i class="fa-solid fa-chart-pie pe-3"></i><span class="logo-text">
+                Dashboard</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-chart-bar pe-3"></i><span
+                class="logo-text">Leaderboard</span> </a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-cart-shopping pe-3"></i><span
+                class="logo-text">Order</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-bag-shopping pe-3"></i><span
+                class="logo-text">Products</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-arrow-up-right-dots pe-3"></i><span
+                class="logo-text">Sales Report</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-regular fa-message pe-3"></i><span
+                class="logo-text">Message</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-gear pe-3"></i><span
+                class="logo-text">Setting</span></a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="sidebar-link"><i class="fa-solid fa-right-from-bracket pe-3"></i><span
+                class="logo-text">Sign out</span></a>
+          </li>
+        </ul>
+        <!-- card in sidebar -->
+        <div class="card logo-text" style="width: 15rem;border-radius: 20px;background-color: #5D5FEF;">
+          <div class="card-body dabang-pro ">
+            <img src="assets/images/Logo.png" class="mx-auto d-block">
+            <h5 class="card-title text-white text-center">Dabang Pro</h5>
+            <p class="card-text text-white text-center">Get access to all features on tetumbas</p>
+            <div class="text-center">
+              <button type="button" class="btn btn-white ">Get Pro</button>
+            </div>
+          </div>
+        </div>
+       
+
+      </div>
+    </aside>
+
+    <!-- page content (main)-->
+    <div class="main">
+      <!-- navbar -->
+      <div class="navbar navbar-expand-sm px-3 border-bottom d-flex">
+        <div class="sidebar-btn">
+          <button class="btn" onclick="func()">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+        
+        <div class="container">
+          <div class="d-flex nav-searchbar">
+            <a href="#"><i class="fa-solid fa-magnifying-glass mt-1 p-2"></i></a>
+            <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+          </div>
+          <div class="notification d-flex ">
+            <button type="button" class="btn btn-primary position-relative bell border-0 m-3">
+              <i class="fa-regular fa-bell"></i>
+              <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                <span class="visually-hidden"></span>
+              </span>
+            </button>
+            <div class="profile d-flex ">
+              <div class="img m-3">
+                <img src="assets/images/profile.png" alt="">
+              </div>
+              
+              <div class="admin m-3 d-none d-md-block ">
+                <p class="h6">Sachin</p>
+                <p class="h6">Admin</p>
+              </div>
+              <div class="dropdown m-3">
+                <button class="btn btn-secondary dropdown-toggle bg-white text-dark" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li class="d-block d-md-none">
+                    <p class="h6">Sachin</p>
+                    <p class="h6">Admin</p>
+                  </li>
+                  <li><a class="dropdown-item" href="#">profile</a></li>
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <!--center part content   -->
+      <div class="container-fluid  ">
+
+        <!-- first row -->
+        <div class="row ">
+          <!-- first row -->
+          <div class="col-lg-7 mt-3  bg-white first-part-box  ">
+            <!-- title of first box -->
+            <div class="first-part-title mt-2 d-flex justify-content-between">
+              <div class="first-title">
+                <p class="h5 ">Today's Sales</p>
+                <p class="h6">Sales summary</p>
+              </div>
+
+              <div class="btn  ">
+                <button type="button " class="btn btn-light "><i class="fa-solid fa-upload pe-2"></i>Export</button>
+              </div>
+            </div>
+            <!-- cards  -->
+            <div class="card-group  m-3 ">
+              <!-- card 1 -->
+              <div class="card border-0">
+
+                <div class="card-body card1 me-2">
+                  <i class="fa-solid fa-signal d-flex justify-content-center "></i>
+                  <h5 class="card-title">$1k</h5>
+                  <h6 class="card-title">Total Sales</h6>
+                  <p class="growth">+8% from yesterday</p>
+                </div>
+
+              </div>
+              <!-- card 2 -->
+              <div class="card border-0">
+
+                <div class="card-body card2 me-2">
+                  <i class="fa-solid fa-file d-flex justify-content-center"></i>
+                  <p class="h2">300</p>
+                  <p class="h6">Total Order</p>
+                  <p class="growth">+5% from yesterday</p>
+                </div>
+
+              </div>
+              <!-- card 3 -->
+              <div class="card border-0">
+
+                <div class="card-body card3 me-2">
+                  <i class="fa-solid fa-tag d-flex justify-content-center"></i>
+                  <p class="h2">5</p>
+                  <p class="h6">Product sold</p>
+                  <p class="growth">+12% from yesterday</p>
+                </div>
+
+              </div>
+
+              <!-- card 4 -->
+              <div class="card border-0">
+
+                <div class="card-body card4">
+                  <i class="fa-solid fa-user-plus d-flex justify-content-center"></i>
+                  <p class="h2">8</p>
+                  <p class="h6">New Customers</p>
+                  <p class="growth">0.5% from yesterday</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- accordian  -->
+          <div class="col-lg-5 mt-3 ">
+            <div class="card second-box border-0 h-100" style="width: auto;">
+              <div class="card-body ">
+                <h5 class="card-title">Visitor insights</h5>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                        a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
+                        a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- second row -->
+
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 col-sm-12 ">
+            <div class="back-table mt-2 ps-3 p-3">
+              <!-- first table in second row -->
+              <div class="h5">Visitor List</div>
+              <!-- responsive table showing horizontal scroll in small size -->
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="head">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Join Date</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">01</th>
+                      <td>Stephen P. Osborn</td>
+                      <td>17 Jan,2023</td>
+                      <td>
+                        <button class="btns ">
+                          <i class="fa-regular fa-pen-to-square" style="color: #0095FF;"></i>
+                        </button>
+                        <button class="btns">
+                          <i class="btns fa-solid fa-trash" style="color: #ff0000be;"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">02</th>
+                      <td>Odessa G. Mettler</td>
+                      <td>13 Feb, 2023</td>
+                      <td>
+                        <button class="btns ">
+                          <i class="fa-regular fa-pen-to-square" style="color: #0095FF;"></i>
+                        </button>
+                        <button class="btns">
+                          <i class="btns fa-solid fa-trash" style="color: #ff0000be;"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">03</th>
+                      <td>Judith H. Richards</td>
+                      <td>13 Feb,2023</td>
+                      <td>
+                        <button class="btns ">
+                          <i class="fa-regular fa-pen-to-square" style="color: #0095FF;"></i>
+                        </button>
+                        <button class="btns">
+                          <i class="btns fa-solid fa-trash" style="color: #ff0000be;"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">04</th>
+                      <td>Jack B. Perezs</td>
+                      <td>10 Feb,2023</td>
+                      <td>
+                        <button class="btns ">
+                          <i class="fa-regular fa-pen-to-square" style="color: #0095FF;"></i>
+                        </button>
+                        <button class="btns">
+                          <i class="btns fa-solid fa-trash" style="color: #ff0000be;"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">05</th>
+                      <td>Chris B. Ryant</td>
+                      <td>13 Feb,2023</td>
+                      <td>
+                        <button class="btns ">
+                          <i class="fa-regular fa-pen-to-square" style="color: #0095FF;"></i>
+                        </button>
+                        <button class="btns">
+                          <i class="btns fa-solid fa-trash" style="color: #ff0000be;"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div style="text-align: center;"><a href="#" style="color:#5D5FEF ;">Read More</a></div>
+            </div>
+          </div>
+          <!-- progress bar -->
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="back-table mt-2 p-3">
+              <div class="h5">Top Products</div>
+              <!-- responsive table showing horizontal scroll in small size -->
+              <div class="table-responsive">
+                <!-- second table in second row -->
+                <table class="table">
+                  <thead class="head">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Popularity</th>
+                      <th scope="col">Sales</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">01</th>
+                      <td class="pb-4">Home Decor Range</td>
+                      <td>
+                        <div class="progress pr_1 mt-2">
+                          <div class="progress-bar w-75 " role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                            aria-valuemax="50"></div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sale1">45%</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">02</th>
+                      <td class="pb-4">Disney Princess Pink Bag 18'</td>
+                      <td>
+                        <div class="progress pr_2 mt-2">
+                          <div class="progress-bar progres2" role="progressbar" style="width: 60%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                      <td>
+
+                        <div class="sale2">29%</div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">03</th>
+                      <td class="pb-4">Bathroom Essentials</td>
+                      <td>
+                        <div class="progress pr_3 mt-2">
+                          <div class="progress-bar progres3 " role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                      <td>
+
+                        <div class="sale3">18%</div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">04</th>
+                      <td class="pb-4">Apple Smartwatches</td>
+                      <td>
+                        <div class="progress pr_4 mt-2">
+                          <div class="progress-bar progres4" role="progressbar" style="width: 25%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </td>
+                      <td>
+
+                        <div class="sale4">25%</div>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- third row -->
+        <div class="row ">
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="back-table pt-2 ps-2  mt-2" style="height: 100%;">
+              <div class="h5 mt-4 mb-4">Main Products</div>
+
+              <ul class="nav nav-pills " role="tablist">
+                <li class="nav-item ms-2">
+                  <a class="nav-link active" data-bs-toggle="pill" href="#product1">Product-1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="pill" href="#product2">Product-2</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="product1" class="container tab-pane active "><br>
+                  <div class="content-tab-third d-flex">
+                    <div class="col-lg-2">
+                      <img src="assets/images/dummy-image-square 1.png" alt="">
+                    </div>
+
+                    <div class=" col-lg-10 content-product ps-3">
+                      <div class="h6">What is this product 1 ?</div>
+                      <p>There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        hidden in the middle of text.</p>
+                      <button type="button" class="btn" style="background-color:#5D5FEF; color: white;">Read
+                        More</button>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="product2" class="container tab-pane fade"><br>
+                  <div class="content-tab-third d-flex">
+                    <div class="col-lg-2">
+                      <img src="assets/images/dummy-image-square 1.png" alt="">
+                    </div>
+
+                    <div class=" col-lg-10 content-product ps-3">
+                      <div class="h6">What is this product 2 ?</div>
+                      <p>There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected humour,
+                        or randomised words which don't look even slightly believable. If you are going to
+                        use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+                        hidden in the middle of text.</p>
+                      <button type="button" class="btn" style="background-color:#5D5FEF; color: white;">Read
+                        More</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- country map -->
+          <div class="col-lg-3 col-md-6 mt-1">
+            <div class="card back-table" style="width: 100%;border: none;height: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Sales Mapping by country</h5>
+              </div>
+              <img src="assets/images/world 1.png" class="card-img-top  " alt="...">
+            </div>
+          </div>
+          <!-- chart  -->
+
+          <div class="col-lg-3 col-md-6 mt-1 chart ">
+            <div class="card back-table" style="border: none; height: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Volume Vs Service Level</h5>
+              </div>
+              <img src="assets/images/Volume.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+    // js for sidebar on click menu button showing sidebar and when off showing icon
+    function func() {
+      document.querySelector('.sidebar').classList.toggle('text-hide');
+
+    }
+  </script>
+</body>
+
+</html>
