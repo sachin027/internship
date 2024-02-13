@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins' , sans-serif;
+    margin: 0;
+}
+.row{
+    background-color: #F8F9FA;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.main{
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+.logo{
+    padding: 1rem ;
+}
+.logo a{
+    color: #151D48;
+    font-weight:600;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.list-group{
+    padding: 0;
+    height: 800px;
+}
+
+.text-hide .logo-text{
+    display: none; 
+    transition: all 0.3s;
+}
+
+.list-item{
+    height: 55px ;
+    padding: 2rem 2rem;
+    display: block;
+    position: relative;
+}
+.list-item a{
+    color: rgba(115, 119, 145, 1);
+}
+.list-item a:hover{
+    padding: 10px;
+    border-radius: 16px;
+    background: rgba(93, 95, 239, 1);
+    color: white;
+    transition: all 0.35s;
+}
+/* first row */
+/* first box css start here */
+/* title css */
+.first-part-box{
+    border-radius: 20px;
+}
+.first-part-title h5{
+    background-color: #05004E;
+}
+.first-part-title h6{
+    background-color: #737791;
+}
+
+/* card css */
+.growth{
+    font-size: 10px;
+    color: blue ;
+}
+.card1{
+    background-color: #FFE2E5;
+    border-radius: 16px;
+}
+.card2{
+    background-color: #FFF4DE;
+    border-radius: 16px;
+}
+.card3{
+    background-color: #DCFCE7;
+    border-radius: 16px;
+}
+.card4{
+    background-color: #F3E8FF;
+    border-radius: 16px;
+}
+.card1 i{
+    background-color: #FA5A7D;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.card2 i{
+    background-color: #FF947A;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.card3 i{
+    background-color: rgb(43, 245, 43);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.card4 i{
+    background-color: #BF83FF;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+}
+.second-box{
+    border-radius:20px;
+}
+
+/* second row css start here */
+.back-table{
+    background-color: white;
+    border-radius: 20px;
+}
+.progress{
+    height: 5px;
+}
+.pr_1{
+    background-color: #CDE7FF;
+}
+.pr_2{
+    background-color: #8cfac786;
+}
+.pr_3{
+    background-color: #c5a8ffac;
+}
+.pr_4{
+    background-color: #FFD5A4;
+}
+.progres2{
+    background-color: #00E58F;
+}
+.progres3{
+    background-color:#884DFF;
+}
+.progres4{
+    background-color: #ff8900;
+}
+.sale1{
+    color: #0095FF;
+    background-color: #CDE7FF;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #0095FF;
+    border-radius: 20px;
+}
+.sale2{
+    color: #00E58F;
+    background-color: #8cfac786;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #00E58F;
+    border-radius: 20px;
+}
+.sale3{
+    color: #884DFF;
+    background-color: #c5a8ffac;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #884DFF;
+    border-radius: 20px;
+}
+.sale4{
+    color: #FF8900;
+    background-color: #FFD5A4;
+    width: 50px;
+    text-align: center;
+    border: 1px solid #FF8900;
+    border-radius: 20px;
+}
+
+/* edit and delete button */
+.btns{
+    border: none;
+    background-color: white;
+}
+
+/* third row tab */
+.nav-pills .nav-link.active{
+    background-color:  #5D5FEF;
+    color: white ;
+}
+.chart img{
+    width:100%;
+    margin: auto;
+}
+
+.nav-searchbar{
+    border-radius: 10px;
+    background-color: #d9dfe4;
+}
+.form-control{
+    background-color: #d9dfe4;
+}
+.bell{
+    background-color: #FFFAF1;
+    color: #FFA412;
+}
+
+/* card in sidebar css */
+.dabang-pro button{
+    color: #884DFF;
+    background-color: white;
+}
+
+/* media query for navbar  */
+/* for screen less than 370px */
+/* it will hide the sidebar and we can see the side bar by click menu */
+@media screen and (max-width: 370px) {
+    
+    .text-hide{
+        display: none;
+    }
+    .notification .btn {
+        margin-left: -20px !important;
+    }
+    
+}
