@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    margin: 2rem 20rem;
+}
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+img{
+    width: 250px;
+}
+
+.items {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-top: 15px;
+
+}
+.items ul{
+    display: flex;
+    list-style-type: none;
+    padding-top: 4px;
+    font-size: 22px;
+}
+ .items a:hover{
+    color: rgb(0, 0, 245);
+}
+.items a{
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    
+}
+.btn{
+    background-color: #F17C21;
+    border-radius: 9px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    color: white;
+    box-shadow: 2px 3px gray;
+}
+
+
+
+.first-section{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-color: rgba(35, 94, 169, 0.8);
+}
+.first-section .left-first p{
+    margin: 1rem 0;
+}
+.hero{
+    margin: 1rem 0;
+    padding: 5rem 0;
+}
+.hero:nth-child(odd){
+    background-color: rgba(35, 94, 169, 0.8);
+}
+.left-first{
+    padding-left: 300px;
+    width: 50%;
+    text-align: start;
+
+}
+
+.left-first .heading-text{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 500;
+    padding-top: 30px;
+    width: 100%;
+    color:white;
+
+    text-align: start;
+    padding-right: 500px;
+}
+.left-first .sub-heading-text{
+    font-size: 48px;
+text-align:start;
+    line-height: 48px;
+    font-weight: 700;
+   
+    padding-top: 30px;
+    padding-right: 3px;
+   
+    color:white;
+}
+.left-first .description{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-right: 30px;
+    padding-top: 30px;
+    color: white;
+    text-align: start;
+}
+
+
+ .left-first .read-more{
+    background-color: #F17C21;
+    width: 150px;
+    height: 75px;
+    line-height: 20px;
+    color: white;
+    border: 0;
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+.right-first img{
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+
+/* section 2 - card css start */
+.second-section{
+    display: grid;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+.second-section .card{
+    width: 321px;
+    height: 459px;
+    text-align: center;
+    color: white;
+}
+.second-section .title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.second-section .card .para{
+    font-size: 20px;
+    margin: 2rem 2.5rem;
+    word-spacing: 0.5;
+    
+}
+.second-section .card hr{
+    margin: 0 7rem;
+    width: 100px;
+    color: white;
+    border: 1px solid white;
+}
+
+/* third section css */
+
+.third-section{
+    text-align: center;
+}
+.third-section .para-div{
+    font-size: 36px;
+}
+.third-section .first-para{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    margin-bottom: 1rem;
+    color: white;
+}
+.third-section .second-para{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px;
+    margin: 0 17rem;
+    color: white;
+}
+ .image-div{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 300px;
+}
+.img-carrier{
+    position: relative;
+    margin-top: 1.5rem;
+}
+.img-carrier img{
+    display: block;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.img-carrier:hover .overlay{
+    opacity: 1;
+}
+.img-carrier .overlay .para1{
+    color: white;
+    z-index: 2;
+    margin: 0;
+    line-height: 60px;
+    font-size: 30px;
+    width: 100%;
+    background-color:  rgba(241, 124, 33, 0.93);
+}
+
+/* fourth css */
+p{
+    font-size: 40px;
+    letter-spacing: -0.8%;
+    text-align: center;
+}
+span{
+    color: #F17C21;
+}
+
+.tabs{
+    box-shadow: 1px 1px gray;
+    text-align: center;
+    border-radius: 90px;
+}
+.tabs > button{
+    background-color: #F17C21;
+    border: none;
+    border-radius : 90px;
+    width: 100px;
+}
+.btn-cov {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    border-radius: 90px;
+    margin: 1rem 51rem;
+    padding: 1rem ;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.btn-cov .tabs .month-btn{
+    width: 90px;
+    height: 35px;
+}
+.btn-cov .tabs .year-btn{
+    width: 90px;
+    height: 35px;
+    background-color: white;
+}
+.month{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 1rem; 
+}
+
+.month .starter{
+    width: 250px;
+    height: 385px;
+    background-color: #f1ececc9;
+}
+.starter:hover{
+    border: 1px solid #F17C21;
+}
+
+.month .pro{
+    width: 250px;
+    height: 385px;
+    background: rgba(241, 124, 33, 0.05);
+}
+.pro:hover{
+    border: 1px solid #F17C21;
+}
+.month .business{
+    width: 250px;
+    height: 385px;
+    background-color: #f1ececc9;
+}
+.business:hover{
+    border: 1px solid #F17C21;
+}
+.month .enterprise{
+    width: 250px;
+    height: 385px;
+    background: rgba(241, 124, 33, 0.05);
+}
+.enterprise:hover{
+    border: 1px solid #F17C21;
+}
+
+.head-name{
+    padding: 0 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+.head-name h1{
+    line-height: 150px;
+}
+
+.head-name .heading-plan2{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.head-name .heading-plan{
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.month .head-name .btn-plan{
+    margin-top: 2rem;
+    color: black;
+    background-color: white;
+    border-radius: 100px solid black;
+    border-radius: 4px;
+    padding: 42px, 24px, 42px, 24px;
+}
+.month .head-name .pro .btn-plan{
+    color: white;
+    background-color: #F17C21;
+}
+.btn-plan{
+    width: 100px;
+    height: 40px;
+}
+.month .head-name .btn-plan:hover{
+    background-color: #3f3d3c;
+    color: white;
+}
+
+.recommended p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -30px;
+    background-color: #F17C21;
+    width: 260px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* fifth section css */
+
+.fifth-section{ 
+    color: white; 
+    margin-bottom: 0;
+} 
+.fifth-para{ 
+    font-size:36px ; 
+    line-height: 54px; 
+    font-weight: 700; 
+    padding-bottom: 1rem; 
+} 
+.fifth-para2{ 
+    margin: 0 200px; 
+    font-size:20px ; 
+    line-height: 35px; 
+    font-weight: 300; 
+} 
+.fifth-section .btn-fifth{ 
+    width: 197px; 
+    height: 59px; 
+    color: #F17C21; 
+    background-color: white; 
+   border: none; 
+   margin-top: 15px; 
+   margin-left: 860px; 
+   font-size: 20px; 
+   font-weight: 500; 
+   line-height: 24.2px; 
+   border-radius: 9px;
+}
+
+
+/* sixth section css  */
+.sixth-section{
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 0;
+    top: 0;
+}
+.left-part{
+    display: flex;
+    flex-direction: column;
+}
+.img-sixth{
+    width: 360px;
+    height: 112px;
+    text-align: center;
+    padding-left: 150px;
+
+}
+.circle{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 200;
+    width: 535px;
+    margin-top: -30px;
+    top: 20px;
+    padding-left: 210px;
+
+}
+
+.right-part{
+    margin: 0 15rem ;
+}
+
+
+.right-part  .right-p{
+    font-size: 25px;
+    font-weight: 400;
+}
+.email{
+    border: 1px solid white ;
+    height: 6vh;
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 450px;
+    margin-left: 5px;
+
+}
+.email input[type=text]{
+    background-color: black;
+    float: left;
+    margin-top: 5px;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: white;
+    
+}
+.email button{
+    float: right;
+    width: 30%;
+    padding: 10px;
+    background: #F17C21;
+    color: white;
+    font-size: 17px;
+    margin-right: 2px;
+    border-radius: 13px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+/* footer */
+footer{
+    background-color: black;
+    
+}
+.footer{
+    padding-top: 25px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+.footer1{
+    margin-left: 210px;
+}
+.footer-main{
+    margin-right: 450px;
+  display: flex;
+  gap: 0.5rem ;
+  margin-bottom: 50px;
+}
+ i{
+    
+    background-color: #F17C21;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    border-radius: 80%;
+    padding: 0.5rem;
+}
