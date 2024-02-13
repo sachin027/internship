@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="image/Group.png" alt="">
+        </div>
+        <div class="items">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+        </ul>
+        <button class="btn">Account</button>
+        </div>
+        
+    </div>
+
+    <!-- section 1 -->
+    <div class="container">
+        <div class="hero first-section">
+            <div class="left-first">
+                <p class="heading-text">LITTLE MORE ABOUT US</p>
+                <p class="sub-heading-text">YOUR KIDS IS OUR FUTURE</p>
+                <p class="description">Lorem ipsum dolor sit 
+                    amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    <button class="read-more">Read More</button>
+            </div>
+            <div class="right-first">
+                <img src="image/fd 1.png" alt="">
+            </div>
+        </div>
+
+<!-- section 2 -->
+
+        <div class="hero second-section">          
+                <div class="card " style="background: rgba(241, 124, 33, 0.7)";>
+                    <p class="title">Free Classes</p>
+                    <hr>
+                    <p class="para">Ut enim ad cupidatat non proident, sunt mollit anim id est laborum. consectetur ... Ut Excepteur sint occaecat minim veniam, quis nostrud in culpa qui officia deserunt</p>
+                </div>
+                <div class="card" style="background: rgba(255, 34, 99, 0.7)";>
+                    <p class="title">Free Classes</p>
+                    <hr>
+                    <p class="para">Ut enim ad cupidatat non proident, sunt mollit anim id est laborum. consectetur ... Ut Excepteur sint occaecat minim veniam, quis nostrud in culpa qui officia deserunt</p>
+                </div>
+                <div class="card" style="background: rgba(35, 70, 160, 0.7);">
+                    <p class="title">Free Classes</p>
+                    <hr>
+                    <p class="para">Ut enim ad cupidatat non proident, sunt mollit anim id est laborum. consectetur ... Ut Excepteur sint occaecat minim veniam, quis nostrud in culpa qui officia deserunt</p>
+                </div>
+                <div class="card" style="background: rgba(152, 155, 16, 0.7);">
+                    <p class="title">Free Classes</p>
+                    <hr>
+                    <p class="para">Ut enim ad cupidatat non proident, sunt mollit anim id est laborum. consectetur ... Ut Excepteur sint occaecat minim veniam, quis nostrud in culpa qui officia deserunt</p>
+                </div>
+
+        </div>
+        <!-- third section -->
+        <div class="hero third-section">
+            <div class="para-div">
+                <p class="first-para">Best Classes and Camps</p>
+                <p class="second-para">Quam quisque id diam vel quam elementum. Vestibulum lectus mauris ultrices eros in cursus turpis 
+                massa tincidunt. Pellentesque habitant morbi tristique senectus et netus.</p>
+            </div>
+            
+            
+            <div class="image-div">
+                <div class="img-carrier">
+                    <div class="overlay">
+                        <p class="para1">One-of-a-kind Classes</p>
+                    </div>
+                    <img src="image/mnmnmnmn 1.png" alt="">
+                </div>
+                <div class="img-carrier">
+                    <div class="overlay">
+                        <p class="para1">Summer Camps</p>
+                    </div>
+                    <img src="image/kjjkjk.png" alt="">
+                </div>
+                <div class="img-carrier">
+                    <div class="overlay">
+                        <p class="para1">Summer Camps</p>
+                    </div>
+                    <img src="image/g.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- fourth section -->
+        <div class="hero fourth-section">
+            <p>We offer great <span>price</span> plan for the application</p>
+            <!-- button  -->
+            <div class="btn-cov">
+                <div class="tabs">
+                    <button class="month-btn" onclick="monthly()">Monthly</button>
+                    <button class="year-btn" onclick="yearly()">Yearly</button>
+                </div>
+            </div>
+            
+            <!-- card -->
+            <div class="month">
+                <div class="head-name starter">
+                    <p class="heading-plan">Starter</p>
+                    <p class="heading-plan2 start_para ">Starter pack to help you to get started</p>
+                    <h1> <span class="start_class" style="color: black;">Free</span></h1>
+                  
+                    <button class="btn-plan">Get Started</button>
+                </div>
+                <div class=" head-name pro">
+                    <div class="recommended"><p>Recommended</p></div>
+                    <p  class="heading-plan">Pro</p>
+                    <p class="heading-plan2">More power for small teams create project plans with confidence</p>
+                    <h1><span class="pro_class" style="color: black;"> $ 20 /month</span></h1>
+                    <button class="btn-plan" style="color: white; background-color: #f17c21; border: none;">Get Started</button>
+                </div>
+                <div class="head-name business">
+                    <p  class="heading-plan">Business+</p>
+                    <p class="heading-plan2">For companies that need to manage work happening across multiple teams.</p>
+                    <h1><span class="business_class" style="color: black; ">$ 100/month</span></h1>
+                    <button class="btn-plan">Get Started</button>
+                </div>
+                <div class="head-name enterprise">
+                    <p  class="heading-plan">Enterprise</p>
+                    <p class="heading-plan2">For enterprise that need additional security, control, and support.</p>
+                    <h1> <span class="custom_class" style="color: black;">Custom</span> </h1>
+                    <button class="btn-plan">Contact Sales</button>
+                </div>
+            </div>
+           
+            
+        </div>
+        <!-- fifth section -->
+        <div class="hero fifth-section"> 
+            <p class="fifth-para"> 
+                Call To Action 
+            </p> 
+            <p class="fifth-para2"> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam voluptatibus voluptas, at eligendi beatae dolore tempore placeat a ad facere quia, praesentiu 
+            </p> 
+            <button class="btn-fifth"> 
+                Get Started 
+            </button> 
+        </div>
+        <!-- sixth section -->
+        <div class="hero sixth-section">
+            <div class="left-part" style="width: 50%;">
+                <div class="img-sixth">
+                    <img src="image/circle 2.png" alt="">
+                </div>
+                <p class="circle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam voluptatibus voluptas, at eligendi beatae dolore tempore placeat a ad facere quia, praesentiu</p>
+                
+            </div>
+
+            <div class="right-part" style="width: 50%;">
+               
+                <p class="right-p" style="text-align: start;">Subscribe to our newsletter</p>
+                
+
+                <div class="email">
+                    
+                        <input type="text"  placeholder="Enter Your Email">
+                        <button >subscribe</button>
+                   
+                </div>
+               
+
+                
+            </div>
+        </div>
+        <footer>
+            <div class=" footer">
+                <div class="footer1">Copyright © 2024  -  Shaligraminfotech
+                    
+                </div>
+                    <div class="footer-main">
+                        
+                            <a href="#" ><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                      
+                    </div>
+                    
+               
+                  
+            </div>
+        </footer>
+
+    </div>
+    <script>
+            const month_btn = document.getElementsByClassName('month-btn')[0];
+            const year_btn = document.getElementsByClassName('year-btn')[0];
+
+            const month = document.getElementsByClassName('pro_class')[0];
+            const year = document.getElementsByClassName('business_class')[0];
+            
+            const starter = document.getElementsByClassName('start_class')[0];
+            const custom = document.getElementsByClassName('custom_class')[0];
+
+            const starter_para = document.getElementsByClassName('start_para')[0];
+
+            const monthly = () =>{
+                starter.innerHTML = `Free`
+                month.innerHTML = '$20' + `/month`;
+                year.innerHTML = '$100' + `/month`;
+                custom.innerHTML = `Custom`;
+                starter_para.innerHTML = `Starter pack to help you to get started`;
+
+                month_btn.style.backgroundColor = `#f17c21`
+                month_btn.style.color = "white";
+                year_btn.style.backgroundColor = `#ffff`
+                year_btn.style.color = "gray";
+            }
+            const yearly = () =>{
+                starter.innerHTML = '$50' + `/year`;
+                month.innerHTML = '$200' + `/year`;
+                year.innerHTML = '$1000' + `/year`;
+                custom.innerHTML = `$250` + `/year`
+                starter_para.innerHTML = `For companies that need to manage work  happening across multiple teams.`;
+                month_btn.style.backgroundColor = `#ffff`
+                month_btn.style.color = "gray";
+                year_btn.style.backgroundColor = `#f17c21`;
+                year_btn.style.color = "white";
+            }
+    </script>
+
+</body>
+</html>
