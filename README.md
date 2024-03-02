@@ -2,14 +2,14 @@ HTML CSS  <br />
       :- TASK 1 <br />
       :- TASK 2 <br />
 BOOTSTRAP 5 <br />
-      :- TASK 3
-      :- TASK 4
-      :- TASK 5
+      :- TASK 3 <br />
+      :- TASK 4 <br />
+      :- TASK 5 <br />
 
 JAVASCRIPT 
-      :- JS_TASK1
-      :- JS_TASK2
+      :- JS_TASK1 <br />
+      :- JS_TASK2 <br />
       
 JQUERY-DATATABLE
-      :- JS_TASK3
-      :- JS_TASK4
+      :- JS_TASK3 <br />
+      :- JS_TASK4 <br />
