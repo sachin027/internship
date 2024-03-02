@@ -1,7 +1,7 @@
-HTML CSS 
-      :- TASK 1
-      :- TASK 2
-BOOTSTRAP 5
+HTML CSS  <br />
+      :- TASK 1 <br />
+      :- TASK 2 <br />
+BOOTSTRAP 5 <br />
       :- TASK 3
       :- TASK 4
       :- TASK 5
