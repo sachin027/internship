@@ -1,6 +1,6 @@
 1. HTML CSS
-       *TASK 1 
-       *TASK 2
+       * TASK 1 
+       * TASK 2
 BOOTSTRAP 5 <br />
       :- TASK 3 <br />
       :- TASK 4 <br />
